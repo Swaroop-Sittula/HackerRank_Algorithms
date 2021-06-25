@@ -26,7 +26,7 @@ class Result
         for(var i=1;i<=n;i++)
         {
             //Console.WriteLine(new String(' ',n-i) + new String('#',i));
-            //Console.WriteLine(new String('#', i + 1).PadLeft(N, ' '));
+            //Console.WriteLine(new String('#', i ).PadLeft(n-i, ' '));
            for(var j=1;j<=n-i;j++)
                Console.Write(' ');
            for(var j=1;j<=i;j++)
