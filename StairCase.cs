@@ -26,9 +26,9 @@ class Result
         for(var i=1;i<=n;i++)
         {
            for(var j=1;j<=n-i;j++)
-            Console.Write(' ');
+               Console.Write(' ');
            for(var j=1;j<=i;j++)
-            Console.Write('#');
+               Console.Write('#');
            Console.WriteLine();
         }
     }
