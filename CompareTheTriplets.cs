@@ -26,17 +26,18 @@ class Result
 
     public static List<int> compareTriplets(List<int> a, List<int> b)
     {
-        List<int> result = new List<int>();
-        int aScore = 0,bScore = 0;
+        //easy update if arr size changes
+        var result = new List<int>(){0,0};
+        //int aScore = 0,bScore = 0;
         for(int i=0; i<a.Count;i++)
         {
             if(a[i]<b[i])
-                bScore++;
+                result[1]++;//bScore++;
             else if(a[i]>b[i])
-                aScore++;
+                result[0]++;//aScore++;
         }
-        result.Add(aScore);
-        result.Add(bScore);
+        //result.Add(aScore);
+        //result.Add(bScore);
         return result;
     }
 
