@@ -33,7 +33,7 @@ class Result
             else if(num>0)
                  ratios[0]++;
             else   
-                 atios[1]++;
+                 ratios[1]++;
             
         }
         foreach(var ratio in ratios)
