@@ -30,15 +30,15 @@ class Result
             //error CS0201
             if(num==0)
                 ratios[2]++;
-            else{
-                if(num>0)
-                    ratios[0]++;
-                else   
-                    ratios[1]++;
-            }
+            else if(num>0)
+                 ratios[0]++;
+            else   
+                 atios[1]++;
+            
         }
         foreach(var ratio in ratios)
             Console.WriteLine(String.Format("{0:0.000000}",ratio/arr.Count));
+        //"{index:0.N6}" also works
     }
 
 }
