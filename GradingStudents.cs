@@ -17,6 +17,7 @@ class Result
 
     public static List<int> gradingStudents(List<int> grades)
     {
+        //grades = grades.Select(grade => (!(grade<38)&&grade%5 >2)?grade+(5 - grade%5):grade).ToList();
         for(int i=0;i<grades.Count;i++)
         {
             if(!(grades[i]<38)  && grades[i]%5 >2)
