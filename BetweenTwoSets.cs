@@ -23,6 +23,24 @@ class Result
      *  1. INTEGER_ARRAY a
      *  2. INTEGER_ARRAY b
      */
+    
+ /*   
+    public static int getTotalX(List<int> a, List<int> b)
+    {
+        var left = a.Max();
+        var right = b.Min();
+        var countA = 0;
+        var countB = 0;
+        var total = 0;
+        for(int i=left;i<=right;i++){
+            countA = a.Count(eachA => (i%eachA != 0));
+            countB = b.Count(eachB => (eachB%i != 0));
+            if(countA == 0 && countB == 0)
+                total++;
+        }
+        return total;
+    }
+ */   
 
     public static int getTotalX(List<int> a, List<int> b)
     {
