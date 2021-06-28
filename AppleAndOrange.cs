@@ -29,9 +29,9 @@ class Result
 
     public static void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
     {
-
+        //apples between [s,t]
         var fallenApples = apples.Where(c => (c+a>=s && c+a<=t)).Count();
-        
+        //oranges between [s,t]
         var fallenOranges = oranges.Where(c => (c+b>=s && c+b<=t)).Count();
         
         Console.WriteLine(fallenApples+"\n"+fallenOranges);
