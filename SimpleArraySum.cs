@@ -28,6 +28,7 @@ class Result
         foreach(var num in ar)
             sum += num;
         return sum;
+        //return ar.Sum();
     }
 
 }
