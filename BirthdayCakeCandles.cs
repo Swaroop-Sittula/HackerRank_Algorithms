@@ -26,6 +26,7 @@ class Result
     {
         var tallCount = 0;
         var maxHeight = candles.Max();
+        //return candles.Count(candle => candle==maxHeight);
         foreach(var height in candles)
             if(height == maxHeight)
                 tallCount++;
