@@ -34,8 +34,9 @@ class Result
         var total = 0;
         for(int i=left;i<=right;i++){
             countA = a.Count(eachA => (i%eachA != 0));
+            if(countA != 0) continue;
             countB = b.Count(eachB => (eachB%i != 0));
-            if(countA == 0 && countB == 0)
+            if(countB == 0)
                 total++;
         }
         return total;
