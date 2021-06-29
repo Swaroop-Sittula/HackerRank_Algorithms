@@ -24,6 +24,7 @@ class Result
 
     public static long aVeryBigSum(List<long> ar)
     {
+        //return ar.Sum(); works fine
         var sum = 0L;
         //casting as sum = (long)0 later for a "var" type may not work....check it out
         foreach(var num in ar)
