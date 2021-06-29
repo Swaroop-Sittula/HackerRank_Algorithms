@@ -38,7 +38,7 @@ class Result
         }
         foreach(var ratio in ratios)
             Console.WriteLine(String.Format("{0:0.000000}",ratio/arr.Count));
-        //"{index:0.N6}" also works
+        //"{index:N6}" also works
     }
 
 }
