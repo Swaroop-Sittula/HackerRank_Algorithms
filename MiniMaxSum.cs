@@ -24,6 +24,7 @@ class Result
     public static void miniMaxSum(List<int> arr)
     {
         //arr.Sum() --. overflow problem
+        // var sum = arr.Sum(c=> 1L * c);
         var sum=0L;
         var min=long.MaxValue;
         var max=long.MinValue;
