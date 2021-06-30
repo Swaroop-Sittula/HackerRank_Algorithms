@@ -23,8 +23,7 @@ class Result
      *  1. INTEGER_ARRAY a
      *  2. INTEGER_ARRAY b
      */
-    
- /*   
+  
     public static int getTotalX(List<int> a, List<int> b)
     {
         var left = a.Max();
@@ -41,36 +40,9 @@ class Result
         }
         return total;
     }
- */   
-
-    public static int getTotalX(List<int> a, List<int> b)
-    {
-        var total = 0;
-        bool flip;
-        var left = a.Max();
-        var right = b.Min();
-        for(var X=left;X<=right;X++)
-        {
-            flip = true;
-            
-            foreach(var num in a)
-                if(X%num !=0)
-                    { flip = false; break; }
-            
-            if(!flip)
-                continue;
-            
-            foreach(var num in b)
-                if(num%X != 0)
-                    { flip = false; break; }
-           
-           if(flip)
-                total++;
-        }
-        return total;
-    }
-
+    
 }
+  
 
 class Solution
 {
