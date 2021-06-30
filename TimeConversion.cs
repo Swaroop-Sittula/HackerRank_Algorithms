@@ -16,7 +16,6 @@ class Result
 {
     public static string timeConversion(string s)
     {
-        //return Convert.ToDateTime(s).ToString("hh:mm:sstt"); reverse answer tt->AM,PM
         return DateTime.Parse(s).ToString("HH:mm:ss");
     }
 
