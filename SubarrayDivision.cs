@@ -19,12 +19,21 @@ class Result
         //m - size of subarray
         //d - sum value of 'm' consecutive values
         var result = 0;
-        for(int i=0;i+m<=s.Count;i++)
+        
+        var windowSum = s.Take(m).Sum();
+        //s.Skip(i).Take(m).Sum() ... costly for window sum in for loop (since returns a list)
+        //we can also use s.GetRange(i,m).Sum()
+        
+        if(windowSum == d)
+            result++;
+        
+        for(var i=0;i<s.Count-m;i++)
         {
-                //s.GetRange(i,m).Sum()
-            if(s.Skip(i).Take(m).Sum() == d)
+            windowSum += (s[i+m] - s[i]);
+            if(windowSum == d)
                 result++;
         }
+        
         return result;
     }
 }
