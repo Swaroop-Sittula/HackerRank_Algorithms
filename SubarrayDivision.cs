@@ -11,7 +11,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
-
+/* https://www.hackerrank.com/challenges/the-birthday-bar/problem */
 class Result
 {
     public static int birthday(List<int> s, int d, int m)
