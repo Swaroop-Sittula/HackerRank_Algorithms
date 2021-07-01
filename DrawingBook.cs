@@ -11,7 +11,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
-
+/* https://www.hackerrank.com/challenges/drawing-book/problem */
 class Result
 {
 
