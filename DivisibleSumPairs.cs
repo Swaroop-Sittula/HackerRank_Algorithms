@@ -11,7 +11,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
-
+/* https://www.hackerrank.com/challenges/divisible-sum-pairs/problem */
 class Result
 {
     public static int divisibleSumPairs(int n, int k, List<int> ar)
