@@ -18,17 +18,18 @@ class Result
     {
         var min = int.MaxValue;
         var max = int.MinValue;
-        var minBreaking = -1;
-        var maxBreaking = -1;
+        //var minBreaking = -1;  
+        //var maxBreaking = -1;
+        var breaking = new List<int>(){-1,-1}; //maxBreaking, minBreaking
         foreach(var score in scores)
         {
-            if(min > score)
-                { min=score; minBreaking++; }
             if(max < score)
-                { max=score; maxBreaking++; }
+                { max=score; breaking[0]++; }
+            if(min > score)
+                { min=score; breaking[1]++; }
         }
-        var list = new List<int>(){maxBreaking,minBreaking};
-        return list;
+        
+        return breaking;
     }
 }
 
