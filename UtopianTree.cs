@@ -17,6 +17,7 @@ class Result
     public static int utopianTree(int n)
     {
         var height = 1; //at start
+        //better for updates, if one of the condition changes
         for(int i=1;i<=n;i++)
         {
             if(i%2==0)
